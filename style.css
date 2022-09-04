@@ -18,13 +18,9 @@ a:hover {
     cursor: pointer;
 }
 
-#page-loading-blocs-notifaction {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
+figcaption {
+    font-size: 16px;
+    color: #49475B;
 }
 
 .bloc {
@@ -116,7 +112,7 @@ a:hover {
 }
 
 .d-bloc .divider-h span {
-    border-color: rgba(255, 255, 255, .2);
+    border-color: #3C1518;
 }
 
 .d-bloc .a-btn,
@@ -133,7 +129,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, 0.6);
+    color: #3C1518;
 }
 
 .d-bloc .a-btn:hover,
@@ -150,7 +146,7 @@ a:hover {
 .d-bloc h5 a:hover,
 .d-bloc h6 a:hover,
 .d-bloc p a:hover {
-    color: rgb(255, 255, 255);
+    color: #3C1518;
 }
 
 .d-bloc .navbar-toggle .icon-bar {
@@ -753,7 +749,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: #14080eba;
     padding: 40px 40px 40px 40px;
 }
 
@@ -780,12 +776,12 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #14080E!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #f7b99c!important;
+    color: #14080E!important;
 }
 
 .ltc-white {
