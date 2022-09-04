@@ -10,7 +10,6 @@ body {
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none!important;
 }
 
 a:hover {
@@ -456,10 +455,6 @@ nav .caret {
     background: rgba(0, 0, 0, .3);
 }
 
-button {
-    outline: none!important;
-}
-
 .btn-rd {
     border-radius: 40px;
 }
@@ -647,7 +642,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #14080E!important;
 }
 
 .container {
@@ -667,18 +662,18 @@ a {
     font-style: italic;
     font-size: 20px;
     text-align: center;
-    font-weight: lighter;
+    /* font-weight: lighter; */
     max-width: 520px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 p {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .tight-width-whitespace {
     max-width: 600px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
 .h1 {
