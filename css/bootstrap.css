@@ -3643,12 +3643,10 @@ textarea.input-lg {
 .btn:active.focus,
 .btn:active:focus,
 .btn:focus {
-  /* outline: 5px auto -webkit-focus-ring-color; */
-  /* outline-offset: -2px; */
+  outline: 5px auto #14080e;
+  outline-offset: 0px;
   border: 1px solid #14080e;
   box-shadow: inset 0 0 5px #fffbff80, 0 0 20px rgba(255, 255, 255, .2);
-  outline-color: rgba(255, 255, 255, 0);
-  outline-offset: 15px;
 }
 
 .btn.focus,
