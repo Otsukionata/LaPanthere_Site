@@ -147,6 +147,22 @@ figcaption {
 .d-bloc p a:hover {
   color: #ffffff;
 }
+.d-bloc .a-btn:focus,
+.d-bloc .navbar a:focus,
+.d-bloc .navbar-brand:focus,
+.d-bloc a:focus .icon-sm,
+.d-bloc a:focus .icon-md,
+.d-bloc a:focus .icon-lg,
+.d-bloc a:focus .icon-xl,
+.d-bloc h1 a:focus,
+.d-bloc h2 a:focus,
+.d-bloc h3 a:focus,
+.d-bloc h4 a:focus,
+.d-bloc h5 a:focus,
+.d-bloc h6 a:focus,
+.d-bloc p a:focus {
+  color: #000000;
+}
 
 .d-bloc .navbar-toggle .icon-bar {
   background: rgba(255, 255, 255, 1);
@@ -323,6 +339,27 @@ figcaption {
   font-size: 16px;
 }
 
+.nav > li a:after,
+.nav > li a:before {
+  backface-visibility: hidden;
+  border: 1px solid #14080e;
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 10px auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.nav > li a:hover:after,
+.nav > li a:hover:before {
+  backface-visibility: hidden;
+  border-color: #14080e;
+  transition: width 350ms ease-in-out;
+  width: 102%;
+}
+
 .navbar-nav .open .dropdown-menu > li > a {
   text-align: inherit;
 }
@@ -330,6 +367,18 @@ figcaption {
 .nav > li a:hover,
 .nav > li a:focus {
   background: transparent;
+}
+
+.nav > li a:hover,
+.nav > li a:focus {
+  letter-spacing: 5px;
+}
+
+.nav > li a:hover:after,
+.nav > li a:focus:before {
+  bottom: 0;
+  top: auto;
+  width: 102%;
 }
 
 .navbar-toggle {
@@ -528,7 +577,7 @@ a[data-lightbox] {
   text-align: center;
 }
 
-a[data-lightbox]:hover::before {
+a[data-lightbox]:hover::before, a[data-lightbox]:focus::before {
   content: "+";
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
     Helvetica, Arial;
@@ -547,7 +596,7 @@ a[data-lightbox]:hover::before {
   -webkit-transform: translateY(-50%);
 }
 
-a[data-lightbox]:hover img {
+a[data-lightbox]:hover, a[data-lightbox]:focus img {
   opacity: 0.6;
   -webkit-animation-fill-mode: none;
   animation-fill-mode: none;
